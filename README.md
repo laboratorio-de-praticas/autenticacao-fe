@@ -1,16 +1,16 @@
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify">
-  <img width="180" src="https://vite.dev/logo.svg" alt="Vite logo">
+  <img width="180" src="https://github.com/gilSFranco/gilmar-soares-estudos/blob/main/sprint-01-semana-01/Logo.svg" alt="next logo">
   <img width="180" src="https://github.com/gilSFranco/gilmar-soares-estudos/blob/main/sprint-01-semana-01/logo_dark.svg" alt="react logo">
   </a>
   <br>
   <br>
-  React with Vite
+  React with Next
   <br>
 </h1>
 
-<h4 align="center">Structured with <a href="https://vite.dev/guide/" target="_blank">vite</a> and developed using the <a href="https://react.dev/learn" target="_blank">react</a> framework.</h4>
+<h4 align="center">Structured with <a href="https://nextjs.org/docs" target="_blank">next</a> and developed using the <a href="https://react.dev/learn" target="_blank">react</a> framework.</h4>
 
 <p align="center">
   <a href="https://github.com/facebook/react/blob/main/LICENSE" target="_blank"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="NPM Version" /></a>
