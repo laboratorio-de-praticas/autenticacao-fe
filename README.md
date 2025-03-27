@@ -1,8 +1,10 @@
 <h1 align="center">
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify">
-  <img width="180" src="https://github.com/gilSFranco/gilmar-soares-estudos/blob/main/sprint-01-semana-01/Logo.svg" alt="next logo">
   <img width="180" src="https://github.com/gilSFranco/gilmar-soares-estudos/blob/main/sprint-01-semana-01/logo_dark.svg" alt="react logo">
+  <br>
+  <br>
+  <img width="250" src="https://github.com/gilSFranco/gilmar-soares-estudos/blob/main/sprint-01-semana-01/Logo.png" alt="next logo">
   </a>
   <br>
   <br>
