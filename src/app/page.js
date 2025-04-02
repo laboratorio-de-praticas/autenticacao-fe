@@ -1,8 +1,8 @@
-import ForgotPassword from "@/components/student/forgotpassword";
+import NewPassword from "@/components/student/newpassword";
 import Global from "./globals.css"
 
 export default function Home() {
   return (
-    <ForgotPassword />
+    <NewPassword />
   );
 }
