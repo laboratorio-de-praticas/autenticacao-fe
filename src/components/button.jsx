@@ -13,6 +13,7 @@ const Button = ({
     onClick = () => {}
 }) => {
     let backgroundColor = ""
+    let width = ""
 
     switch (cor) {
         case "verde":
@@ -29,10 +30,14 @@ const Button = ({
             break;
     }
 
+    if (!hasIcon) {
+        width = "w-[162px]"
+    }
+
     return (
         <button 
             onClick={onClick} 
-            className={`flex items-center ${backgroundColor} py-2 px-3 rounded-full gap-x-2`}
+            className={`flex items-center justify-center ${backgroundColor} ${width} py-2 px-3 rounded-full gap-x-2`}
         >
             {hasIcon && (
                 <Icon color="white" size={24} />

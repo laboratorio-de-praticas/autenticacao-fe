@@ -1,8 +1,8 @@
-import MultifactorAuthenticationCode from "@/components/student/multifactorauthenticationcode";
+import EmailVerification from "@/components/student/emailverification";
 import Global from "./globals.css"
 
 export default function Home() {
   return (
-    <MultifactorAuthenticationCode />
+    <EmailVerification />
   );
 }
