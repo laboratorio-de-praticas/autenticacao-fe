@@ -70,7 +70,7 @@ const Header = () => {
                             height={30}
                         />                    
                     </div>
-                    <span className={`text-base font-normal ${nunito.className}`}>
+                    <span className={`text-base font-normal text-[#666666] ${nunito.className}`}>
                         /governosp
                     </span>
                 </div>

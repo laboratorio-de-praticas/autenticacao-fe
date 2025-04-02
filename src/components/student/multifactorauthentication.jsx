@@ -16,7 +16,7 @@ const MultifactorAuthentication = () => {
         <>
             <Container>
                 <Header />
-                <main className="flex justify-center p-10">
+                <main className="flex w-full justify-center pb-12">
                     <div className="flex items-center flex-col gap-y-10">
                         <LockKeyholeIcon color="black" size={100} />
 
@@ -36,7 +36,7 @@ const MultifactorAuthentication = () => {
 
                         <div className="flex items-center gap-x-4">
                             <Button
-                                cor = "#3ACF1F"
+                                cor = "verde"
                                 texto = "Sim, ativar agora"
                                 icon = {CheckIcon}
                                 onClick = {
@@ -47,7 +47,7 @@ const MultifactorAuthentication = () => {
                             />
 
                             <Button
-                                cor = "#D32719"
+                                cor = "vermelho"
                                 texto = "Não, ativar depois"
                                 icon = {XIcon}
                                 onClick = {
