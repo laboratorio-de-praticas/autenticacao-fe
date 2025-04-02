@@ -48,6 +48,7 @@ const MultifactorAuthenticationCode = () => {
                             }}
                             type="text"
                             className="w-[50px] h-[50px] border-[#6B7280] focus:border-[#0A74EE] border-solid border-3 rounded-[10px] text-center font-bold text-xl"
+                            maxLength={1}
                         />
 
                         <input
@@ -60,6 +61,7 @@ const MultifactorAuthenticationCode = () => {
                             }}
                             type="text"
                             className="w-[50px] h-[50px] border-[#6B7280] focus:border-[#0A74EE] border-solid border-3 rounded-[10px] text-center font-bold text-xl"
+                            maxLength={1}
                         />
 
                         <input
@@ -72,6 +74,7 @@ const MultifactorAuthenticationCode = () => {
                             }}
                             type="text"
                             className="w-[50px] h-[50px] border-[#6B7280] focus:border-[#0A74EE] border-solid border-3 rounded-[10px] text-center font-bold text-xl"
+                            maxLength={1}
                         />
 
                         <input
@@ -84,6 +87,7 @@ const MultifactorAuthenticationCode = () => {
                             }}
                             type="text"
                             className="w-[50px] h-[50px] border-[#6B7280] focus:border-[#0A74EE] border-solid border-3 rounded-[10px] text-center font-bold text-xl"
+                            maxLength={1}
                         />
                         
                         <input
@@ -96,6 +100,7 @@ const MultifactorAuthenticationCode = () => {
                             }}
                             type="text"
                             className="w-[50px] h-[50px] border-[#6B7280] focus:border-[#0A74EE] border-solid border-3 rounded-[10px] text-center font-bold text-xl"
+                            maxLength={1}
                         />
 
                         <input
@@ -108,6 +113,7 @@ const MultifactorAuthenticationCode = () => {
                             }}
                             type="text"
                             className="w-[50px] h-[50px] border-[#6B7280] focus:border-[#0A74EE] border-solid border-3 rounded-[10px] text-center font-bold text-xl"
+                            maxLength={1}
                         />
                     </div>
 
