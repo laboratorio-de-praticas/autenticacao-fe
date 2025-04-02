@@ -1,8 +1,8 @@
-import EmailVerification from "@/components/student/emailverification";
+import ForgotPassword from "@/components/student/forgotpassword";
 import Global from "./globals.css"
 
 export default function Home() {
   return (
-    <EmailVerification />
+    <ForgotPassword />
   );
 }
