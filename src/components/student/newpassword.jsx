@@ -22,7 +22,7 @@ const NewPassword = () => {
         <Header />
         <Main>
             <div className="flex w-full">
-                <div className="flex pt-10 w-2/5 justify-center">
+                <div className="flex pt-10 pl-10 pr-10 w-2/5 justify-center">
                     <div className="flex w-full max-w-[420px] flex-col gap-y-5">
                         <h1 className={`font-bold text-[20px] ${roboto.className}`}>NOVA SENHA</h1>
                         <input
