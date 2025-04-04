@@ -5,6 +5,7 @@ import { Roboto } from "next/font/google";
 import Button from "../button";
 import Header from "../header";
 import Container from "../container";
+import Main from "../main";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -16,7 +17,7 @@ const MultifactorAuthentication = () => {
         <>
             <Container>
                 <Header />
-                <main className="flex w-full justify-center pb-12">
+                <Main hasSpacing={true}>
                     <div className="flex items-center flex-col gap-y-10">
                         <LockKeyholeIcon color="black" size={100} />
 
@@ -58,7 +59,7 @@ const MultifactorAuthentication = () => {
                             />
                         </div>
                     </div>
-                </main>
+                </Main>
             </Container>
         </>
     )

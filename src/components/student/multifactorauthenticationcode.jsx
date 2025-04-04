@@ -6,6 +6,7 @@ import Container from "../container";
 import Header from "../header";
 import { Roboto } from "next/font/google";
 import { useState } from "react";
+import Main from "../main";
 
 const roboto = Roboto({
   variable: "--font-roboto",
@@ -23,7 +24,7 @@ const MultifactorAuthenticationCode = () => {
     return (
         <Container>
             <Header />
-            <main className="flex w-full justify-center pb-12">
+            <Main hasSpacing={true}>
                 <div className="flex items-center flex-col gap-y-10">
                     <h1 className={`font-bold text-[20px] ${roboto.className}`}>VERIFIQUE O SEU EMAIL</h1>
 
@@ -159,7 +160,7 @@ const MultifactorAuthenticationCode = () => {
                         Corrigir endereço de e-mail
                     </p>
                 </div>
-            </main>
+            </Main>
         </Container>
     );
 };
