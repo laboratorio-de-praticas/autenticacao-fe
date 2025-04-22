@@ -1,10 +1,10 @@
 const RegisterForm = () => {
     return (
-        <div className="min-h-auto pb-20 flex justify-center">
+        <div className="min-h-auto flex justify-center">
           <div className="w-full max-w-md">
-            <h2 className="text-lg font-bold mb-6">CADASTRO DE USUÁRIO</h2>
+            <h2 className="text-lg font-bold mb-3">CADASTRO DE USUÁRIO</h2>
     
-            <form className="flex flex-col gap-4">
+            <form className="flex flex-col gap-2">
               <div>
                 <label className="block text-sm font-medium">Nome:</label>
                 <input
@@ -41,8 +41,8 @@ const RegisterForm = () => {
                 <label className="block text-sm font-medium">Curso:</label>
                 <select className="w-full mt-1 border border-gray-300 rounded px-2 py-1">
                   <option>Selecione o curso</option>
-                  <option>ADS</option>
-                  <option>Eventos</option>
+                  <option>Desenvolvimento de Software Multiplataforma</option>
+                  <option>Gestão Empresarial</option>
                 </select>
               </div>
     
@@ -52,6 +52,10 @@ const RegisterForm = () => {
                   <option>Selecione o semestre</option>
                   <option>1º Semestre</option>
                   <option>2º Semestre</option>
+                  <option>3º Semestre</option>
+                  <option>4º Semestre</option>
+                  <option>5º Semestre</option>
+                  <option>6º Semestre</option>
                 </select>
               </div>
     
@@ -71,7 +75,7 @@ const RegisterForm = () => {
     
               <button
                 type="submit"
-                className="bg-cyan-900 text-white max-w-52 font-semibold py-2 px-7 rounded-full hover:bg-cyan-800 transition mx-auto"
+                className="bg-cyan-900 text-white max-w-52 font-semibold py-2 px-7 mt-2 rounded-full hover:bg-cyan-800 transition mx-auto"
               >
                 Continuar
               </button>
