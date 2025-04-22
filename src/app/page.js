@@ -1,8 +1,8 @@
-import SignUpVisitor from "@/components/visitor/signUpVisitor";
+import SignUpStudent from "@/components/signUpStudent/signUpStudent";
 import Global from "./globals.css"
 
 export default function Home() {
   return (
-    <SignUpVisitor />
+    <SignUpStudent />
   );
 }
