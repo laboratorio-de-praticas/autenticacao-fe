@@ -1,170 +1,249 @@
 /* === Reset básico === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #ffffff;
-    color: #1f1f1f;
-  }
-  html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  
-  /* Garante que o header ocupe toda a largura */
-  header {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-  }
-  
-  /* === Layout responsivo === */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #1f1f1f;
+}
+
+/* === Layout responsivo === */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
   .main-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: row;
   }
   
-  @media (min-width: 768px) {
-    .main-container {
-      flex-direction: row;
-    }
-  }
-  
-  /* === Formulário === */
   .form-section {
-    flex: 1;
-    padding: 4rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+    padding: 3rem 1.5rem;
   }
   
   .form-wrapper {
-    width: 100%;
-    max-width: 400px;
+    max-width: 350px;
   }
   
   .form-wrapper h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-    color: #222;
-  }
-  
-  .form-group {
+    font-size: 1.75rem;
     margin-bottom: 1.5rem;
   }
   
-  .form-group label {
-    display: block;
-    font-size: 0.980rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .form-group input {
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #000;
-    padding: 0.5rem 0;
-    background: transparent;
-    font-size: 1rem;
-  }
-  
-  .form-group input:focus {
-    outline: none;
-    border-color: #00897b;
-  }
-  
-  /* === Checkbox === */
-  .checkbox-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    font-size: 0.875rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .checkbox-wrapper input {
-    margin-top: 0.25rem;
-  }
-  
-  /* === Botão === */
   .button {
-    width: 50%;
-    margin-left: 20%;
-    background-color: #00695c;
-    color: white;
-    padding: 0.70rem;
-    border: none;
-    border-radius: 9000px;
-    font-size: 18px;
-    font-family: bold, Roboto, sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #005C6D;
-  }
-  
-  /* === Imagem === */
-  .image-section {
-    flex: 1;
-    height: auto;
-    display: block;
+    width: 60%;
+    margin-left: 15%;
+    padding: 0.65rem;
+    font-size: 16px;
   }
   
   .image-section img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    object-position: center center;
   }
-  
-  /* Esconde a imagem em telas menores que 768px */
-  @media (max-width: 767px) {
-    .image-section {
-      display: none;
-    }
-  }  
+}
 
+/* Desktop (> 1024px) */
+@media (min-width: 1025px) {
+  .main-container {
+    flex-direction: row;
+  }
+  
+  .form-section {
+    padding: 4rem 2rem;
+  }
+  
+  .form-wrapper {
+    max-width: 400px;
+  }
+}
 
-  select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #e5e5e5;
-    border: none;
-    padding: 8px 40px 8px 12px;
-    font-size: 14px;
-    color: #9ca3af; /* cor inicial (placeholder) */
-    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    background-size: 18px 18px;
-    width: 100%;
+/* === Formulário === */
+.form-section {
+  flex: 1;
+  padding: 2rem 1rem; /* Reduzido para mobile */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 100%; /* Alterado para mobile */
+}
+
+.form-wrapper h1 {
+  font-size: 1.5rem; /* Reduzido para mobile */
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem; /* Reduzido para mobile */
+  color: #222;
+}
+
+.form-group {
+  margin-bottom: 1.25rem; /* Reduzido para mobile */
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem; /* Reduzido para mobile */
+  margin-bottom: 0.25rem;
+}
+
+.form-group input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000;
+  padding: 0.5rem 0;
+  background: transparent;
+  font-size: 1rem;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #00897b;
+}
+
+/* === Checkbox === */
+.checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.8125rem; /* Reduzido para mobile */
+  margin-bottom: 1.25rem; /* Reduzido para mobile */
+}
+
+.checkbox-wrapper input {
+  margin-top: 0.25rem;
+}
+
+/* === Botão === */
+.button {
+  width: 80%; /* Aumentado para mobile */
+  margin: 0 auto; /* Centralizado para mobile */
+  background-color: #00695c;
+  color: white;
+  padding: 0.65rem; /* Reduzido para mobile */
+  border: none;
+  border-radius: 9000px;
+  font-size: 16px; /* Reduzido para mobile */
+  font-family: bold, Roboto, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #005C6D;
+}
+
+/* === Ajustes Específicos para iPad Air e Tablets Similares === */
+
+.image-section {
+  display: none; /* Oculta por padrão em mobile */
+}
+
+/* Tablet Portrait (820x1180 - iPad Air) */
+@media (min-width: 768px) and (max-height: 1180px) and (orientation: portrait) {
+  .main-container {
+    flex-direction: column; /* Mantém em coluna para portrait */
   }
   
-  select:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px rgba(31, 41, 55, 0.2);
+  .image-section {
+    display: block;
+    height: 40vh; /* Altura reduzida para portrait */
+    order: -1; /* Coloca a imagem acima do formulário */
   }
   
-  select option {
-    color: #374151; /* cinza escuro para as opções */
+  .form-section {
+    padding: 2rem 1.5rem;
+    height: 60vh;
+    overflow-y: auto; 
+  }
+}
+
+/* Tablet Landscape (1180x820 - iPad Air) */
+@media (min-width: 1180px) and (orientation: landscape) {
+  .main-container {
+    flex-direction: row; 
   }
   
-  select option[disabled][selected] {
-    color: #9ca3af; /* placeholder visível */
+  .image-section {
+    display: block;
+    height: 100vh;
+    width: 50%;
   }
   
+  .form-section {
+    width: 50%;
+    height: 100vh;
+    padding: 3rem 2rem;
+    justify-content: center;
+  }
+}
+
+/* Ajustes para tablets maiores (ex: iPad Pro 12.9") */
+@media (min-width: 1024px) and (min-height: 1366px) {
+  .image-section {
+    height: 50vh; /* Ajuste proporcional para tablets grandes */
+  }
+  
+  .form-section {
+    height: 50vh;
+  }
+}
+
+/* Garante que a imagem ocupe todo o espaço disponível */
+.image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* Desktop - Ajustes finos */
+@media (min-width: 1025px) {
+  .form-wrapper {
+    max-width: 400px;
+  }
+  
+  .button {
+    width: 50%;
+    margin-left: 20%;
+  }
+}
+
+/* === Select === */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #e5e5e5;
+  border: none;
+  padding: 8px 40px 8px 12px;
+  font-size: 14px;
+  color: #9ca3af;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='18' viewBox='0 0 24 24' width='18' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px 18px;
+  width: 100%;
+}
+
+select:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(31, 41, 55, 0.2);
+}
+
+select option {
+  color: #374151;
+}
+
+select option[disabled][selected] {
+  color: #9ca3af;
+}
